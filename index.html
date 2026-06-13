@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptimaMind AI | Operations Optimization &amp; Predictive Analytics</title>
+  <meta name="description" content="Deploy AI-driven data insights, process automation, and predictive machine learning models. Founded by Aderonke, Operations &amp; AI Research Leader.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-node"></span>
+        OptimaMind <span class="logo-accent">AI</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+        <span class="material-icons">menu</span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About AI Lab</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#blog" class="nav-link">Insights</a>
+        <a href="#demo" class="btn btn-primary btn-nav">Request Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      
+      <!-- Left Content -->
+      <div class="hero-content">
+        <span class="hero-tagline">AI-DRIVEN PROCESS INTELLIGENCE</span>
+        <h1>Optimize Your Business Operations with AI-Driven Data Insights</h1>
+        <p class="hero-desc">
+          Deploy automated operational analytics, predictive pipelines, and machine learning systems built to eliminate workflow bottlenecks and improve transaction metrics.
+        </p>
+        <div class="hero-actions">
+          <a href="#demo" class="btn btn-primary">Request Live Demo</a>
+          <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+      </div>
+
+      <!-- Right Dashboard Simulation -->
+      <div class="hero-dashboard-box">
+        <div class="dashboard-wrapper">
+          <img src="assets/images/dashboard-mockup.png" alt="OptimaMind AI Dashboard interface" class="dashboard-bg-image">
+          
+          <!-- Floating Mockup Card 1 (Training Readiness / Automation Score) -->
+          <div class="mock-card mock-card-readiness">
+            <span class="mock-card-label"><span class="material-icons text-purple">speed</span> Automation Score</span>
+            <div class="mock-card-value"><span class="counter-value" data-target="85">0</span> <span class="val-unit">Optimal</span></div>
+            <span class="mock-card-meta">Data Processing Calibrated</span>
+          </div>
+
+          <!-- Floating Mockup Card 2 (Resting Heart Rate / Run Time Reduction) -->
+          <div class="mock-card mock-card-speed">
+            <div class="mock-icon-row">
+              <span class="material-icons text-rose">trending_down</span>
+              <span class="mock-card-value"><span class="counter-value" data-target="58" data-suffix="%">0%</span></span>
+            </div>
+            <span class="mock-card-meta">Process Run-Time Reduction</span>
+          </div>
+
+          <!-- Floating Mockup Card 3 (Sleep Time / Daily Processing volume) -->
+          <div class="mock-card mock-card-volume">
+            <span class="mock-card-label">Daily Average Time</span>
+            <div class="mock-card-value"><span class="counter-value" data-target="6.5" data-decimals="1">0.0</span> <span class="val-unit">hours</span></div>
+            <!-- Simple Mock Chart Bar Graphics -->
+            <div class="mock-chart">
+              <div class="bar animate-bar" style="height: 0%" data-height="40%"></div>
+              <div class="bar animate-bar" style="height: 0%" data-height="60%"></div>
+              <div class="bar animate-bar" style="height: 0%" data-height="30%"></div>
+              <div class="bar animate-bar" style="height: 0%" data-height="90%"></div>
+              <div class="bar animate-bar" style="height: 0%" data-height="50%"></div>
+            </div>
+          </div>
+
+          <!-- Floating Mockup Card 4 (Sleep Tracker / ML Pipeline Timeline) -->
+          <div class="mock-card mock-card-pipeline">
+            <div class="pipeline-header">
+              <span class="material-icons text-indigo">hub</span>
+              <span>Model Pipeline Status</span>
+            </div>
+            <div class="pipeline-timeline">
+              <div class="timeline-segment segment-awake" style="width: 15%"></div>
+              <div class="timeline-segment segment-rem" style="width: 35%"></div>
+              <div class="timeline-segment segment-core" style="width: 30%"></div>
+              <div class="timeline-segment segment-deep" style="width: 20%"></div>
+            </div>
+            <div class="pipeline-legend">
+              <span class="legend-dot dot-awake"></span> Awake
+              <span class="legend-dot dot-rem"></span> Cleanse
+              <span class="legend-dot dot-core"></span> Train
+              <span class="legend-dot dot-deep"></span> Predict
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section features-section bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">Why Optimize?</span>
+        <h2 class="section-title">How Data Intelligence Empowers Growth</h2>
+        <p class="section-desc">Analyzing operations quality helps you identify structural lags, automate tasks, and monitor transactions in real-time.</p>
+      </div>
+
+      <div class="grid-3 features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feat-icon"><span class="material-icons">grain</span></div>
+          <h3>Spot Operations Patterns</h3>
+          <p>
+            Process and map large transactional datasets. We discover trends, find bottlenecks in supply chains, and optimize database management pipelines.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feat-icon"><span class="material-icons">bolt</span></div>
+          <h3>Improve Process Recovery</h3>
+          <p>
+            Eliminate operational lag. We apply business process automation models to streamline manual workflows, lowering administrative friction.
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feat-icon"><span class="material-icons">insights</span></div>
+          <h3>Deploy Predictive Reporting</h3>
+          <p>
+            Use predictive thinking models to forecast sales, segment customers, and monitor KPIs using advanced live Oracle and Excel dashboards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About and Leadership -->
+  <section id="about" class="section about-section">
+    <div class="container grid-2">
+      <div class="about-content">
+        <span class="section-tagline">THE RESEARCH LAB</span>
+        <h2 class="section-title">Bridging Data Administration and Machine Learning</h2>
+        <p class="lead-text">
+          OptimaMind AI was established by Aderonke, a data researcher and process analyst with a deep background in transaction infrastructure.
+        </p>
+        <p>
+          Drawing on over a decade of hands-on experience managing operational records and financial data pipelines (including Oracle Applications, database systems, and Excel forecasting) at companies like New Home Distribution and Double Tap Events, Aderonke founded OptimaMind AI in early 2025.
+        </p>
+        <p>
+          Certified in Artificial Intelligence and Machine Learning, Aderonke leads our lab in developing custom algorithms that help businesses translate raw operations data into predictive actions.
+        </p>
+      </div>
+      <div class="capabilities-box">
+        <h3>Technical Competencies</h3>
+        <div class="comp-list">
+          <div class="comp-item">
+            <span>Oracle &amp; Data Pipeline Management</span>
+            <div class="comp-bar"><div class="comp-progress animate-bar" style="width: 0%" data-width="95%"></div></div>
+          </div>
+          <div class="comp-item">
+            <span>Machine Learning &amp; AI Modeling</span>
+            <div class="comp-bar"><div class="comp-progress animate-bar" style="width: 0%" data-width="88%"></div></div>
+          </div>
+          <div class="comp-item">
+            <span>Business Process Improvement</span>
+            <div class="comp-bar"><div class="comp-progress animate-bar" style="width: 0%" data-width="92%"></div></div>
+          </div>
+          <div class="comp-item">
+            <span>Advanced Financial Reporting</span>
+            <div class="comp-bar"><div class="comp-progress animate-bar" style="width: 0%" data-width="90%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dashboard Simulator -->
+  <section id="solutions" class="section simulator-section bg-dark text-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline tagline-light">LIVE SIMULATION</span>
+        <h2 class="section-title text-white">Interactive Optimization Widget</h2>
+        <p class="section-desc text-muted">Adjust operations metrics below to simulate efficiency gains and cost savings using our AI models.</p>
+      </div>
+
+      <div class="sim-card">
+        <div class="sim-inputs">
+          <div class="sim-group">
+            <label for="complexitySlider">Process Complexity (Steps): <span id="complexityLabel">15</span></label>
+            <input type="range" id="complexitySlider" min="5" max="50" value="15" class="range-slider">
+          </div>
+          <div class="sim-group">
+            <label for="volumeSlider">Monthly Transactions (K): <span id="volumeLabel">50</span>K</label>
+            <input type="range" id="volumeSlider" min="10" max="250" value="50" step="5" class="range-slider">
+          </div>
+        </div>
+        
+        <div class="sim-results">
+          <div class="sim-metric">
+            <span class="sim-lbl">Simulated Automation Gain</span>
+            <span class="sim-val text-primary" id="simGain">64%</span>
+          </div>
+          <div class="sim-metric">
+            <span class="sim-lbl">Annual Cost Savings Estimate</span>
+            <span class="sim-val text-secondary" id="simSavings">$48,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonial-section bg-light">
+    <div class="container grid-2">
+      <div class="testimonial-header">
+        <span class="section-tagline">SUCCESS STORIES</span>
+        <h2 class="section-title">Validated Operational Impact</h2>
+        <p class="lead-text">Read how enterprises leverage OptimaMind AI to accelerate processing time and validate reporting.</p>
+      </div>
+      
+      <div class="testimonial-card-box">
+        <div class="quote-icon"><span class="material-icons">format_quote</span></div>
+        <p class="quote-text">
+          "We never realized how much operational lag existed in our sales databases until we implemented OptimaMind AI's data audits. Our data processing runtimes decreased by 58% in weeks, and our administrative reporting is now completely error-free."
+        </p>
+        <div class="user-meta">
+          <h4>Angela Summer</h4>
+          <p>Operations Director, Logistics Hub</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog/Insights Section -->
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">OPTIMAMIND BLOG</span>
+        <h2 class="section-title">Insights on Operations &amp; AI Adoption</h2>
+        <p class="section-desc">Sharing research on predictive models, database pipelines, and machine learning trends.</p>
+      </div>
+
+      <div class="grid-3 blog-grid">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <div class="blog-img-holder">
+            <img src="assets/images/blog-image1.png" alt="Collaborative tech workspace" class="blog-img">
+          </div>
+          <div class="blog-details">
+            <span class="blog-tag">AI Adoption</span>
+            <h3 class="blog-title"><a href="#">5 Trends in Business Operations Automation</a></h3>
+            <p class="blog-excerpt">Analyzing how modern firms deploy edge AI pipelines to reduce transaction friction and secure databases.</p>
+          </div>
+        </div>
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <div class="blog-img-holder">
+            <!-- Simulated grid pattern bg representing data -->
+            <div class="blog-img-sim data-pattern-bg"></div>
+          </div>
+          <div class="blog-details">
+            <span class="blog-tag">Data Science</span>
+            <h3 class="blog-title"><a href="#">Predictive Analytics &amp; User Segmentation</a></h3>
+            <p class="blog-excerpt">Developing robust models to structure large sales datasets, helping targeting strategies.</p>
+          </div>
+        </div>
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <div class="blog-img-holder">
+            <div class="blog-img-sim oracle-pattern-bg"></div>
+          </div>
+          <div class="blog-details">
+            <span class="blog-tag">Oracle Integrations</span>
+            <h3 class="blog-title"><a href="#">Connecting Oracle DB with Automated ML Pipelines</a></h3>
+            <p class="blog-excerpt">Steps for data analysts to sync system records with live AI inference servers using secure APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Scheduling Form -->
+  <section id="demo" class="section demo-section bg-light">
+    <div class="container mini-container">
+      <div class="section-header text-center">
+        <span class="section-tagline">DEMO PORTAL</span>
+        <h2 class="section-title">Schedule a Technical Demo</h2>
+        <p class="section-desc">Submit your current system architecture details to arrange a sandbox demo with our research team.</p>
+      </div>
+
+      <form id="demoForm" class="demo-form">
+        <div class="form-group">
+          <label for="companyName">Company / Organization</label>
+          <input type="text" id="companyName" class="form-control" required placeholder="e.g. Lagos Supply Networks Ltd">
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email Address</label>
+          <input type="email" id="contactEmail" class="form-control" required placeholder="name@company.com">
+        </div>
+        <div class="form-group">
+          <label for="primaryDatabase">Primary Database System</label>
+          <select id="primaryDatabase" class="form-control">
+            <option>Oracle Applications / PLSQL</option>
+            <option>Microsoft SQL Server / Excel Sheets</option>
+            <option>PostgreSQL / Custom Datastore</option>
+            <option>No Database (Manual Workflows)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="optimizationGoals">Primary Optimization Goal</label>
+          <textarea id="optimizationGoals" rows="4" class="form-control" required placeholder="Describe database scale, transaction frequency, or current operational bottlenecks..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Demo Request</button>
+      </form>
+
+      <div id="demoSuccess" class="success-alert hidden">
+        <span class="material-icons">lock</span>
+        <p>Demo Slot Reserved! A secure calendar invite and pipeline diagnostic script have been sent to your email address.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Robust Footer -->
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand-col">
+          <a href="#" class="footer-logo">OptimaMind <span class="logo-accent">AI</span></a>
+          <p class="footer-desc">AI-driven process optimization, predictive analytics modeling, and high-performance database reporting systems.</p>
+          <div class="socials-list">
+            <a href="#" aria-label="Github"><span class="material-icons">code</span></a>
+            <a href="#" aria-label="Email"><span class="material-icons">alternate_email</span></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#features">Process Spotting</a></li>
+            <li><a href="#about">About AI Lab</a></li>
+            <li><a href="#solutions">Live Simulator</a></li>
+            <li><a href="#demo">Sandbox Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Research Areas</h4>
+          <ul>
+            <li>Operations Analytics</li>
+            <li>Predictive Thinking Models</li>
+            <li>Oracle Automation</li>
+            <li>Customer Segmentation</li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Contact Lab</h4>
+          <p class="contact-info"><span class="material-icons">location_on</span> Lagos, Nigeria</p>
+          <p class="contact-info"><span class="material-icons">mail</span> research@optimamind.ai</p>
+          <p class="contact-info"><span class="material-icons">verified_user</span> Security Audited</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="stats-row">
+          <span><strong class="counter-value" data-target="215890" data-suffix="+">0</strong> Processes Optimized</span>
+          <span>&middot;</span>
+          <span><strong class="counter-value" data-target="57250" data-suffix="+">0</strong> Active Models Run</span>
+        </div>
+        <p class="copyright-text">&copy; 2026 OptimaMind AI. Registered AI Research &amp; Operations Consultant, Lagos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
