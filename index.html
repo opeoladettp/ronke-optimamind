@@ -274,8 +274,7 @@
         <!-- Blog 2 -->
         <div class="blog-card">
           <div class="blog-img-holder">
-            <!-- Simulated grid pattern bg representing data -->
-            <div class="blog-img-sim data-pattern-bg"></div>
+            <img src="assets/images/blog-image2.png" alt="Predictive Analytics and User Segmentation" class="blog-img">
           </div>
           <div class="blog-details">
             <span class="blog-tag">Data Science</span>
@@ -286,7 +285,7 @@
         <!-- Blog 3 -->
         <div class="blog-card">
           <div class="blog-img-holder">
-            <div class="blog-img-sim oracle-pattern-bg"></div>
+            <img src="assets/images/blog-image3.png" alt="Connecting Oracle DB with Automated ML Pipelines" class="blog-img">
           </div>
           <div class="blog-details">
             <span class="blog-tag">Oracle Integrations</span>
@@ -307,7 +306,11 @@
         <p class="section-desc">Submit your current system architecture details to arrange a sandbox demo with our research team.</p>
       </div>
 
-      <form id="demoForm" class="demo-form">
+      <form id="demoForm" class="demo-form" novalidate>
+        <div class="form-group">
+          <label for="contactName">Full Name</label>
+          <input type="text" id="contactName" class="form-control" required placeholder="e.g. Amaka Okafor">
+        </div>
         <div class="form-group">
           <label for="companyName">Company / Organization</label>
           <input type="text" id="companyName" class="form-control" required placeholder="e.g. Lagos Supply Networks Ltd">
@@ -329,7 +332,8 @@
           <label for="optimizationGoals">Primary Optimization Goal</label>
           <textarea id="optimizationGoals" rows="4" class="form-control" required placeholder="Describe database scale, transaction frequency, or current operational bottlenecks..."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Submit Demo Request</button>
+        <button type="submit" id="demoSubmitBtn" class="btn btn-primary btn-block">Submit Demo Request</button>
+        <div id="demoError" class="error-alert hidden"></div>
       </form>
 
       <div id="demoSuccess" class="success-alert hidden">
@@ -376,7 +380,7 @@
         <div class="footer-links-col">
           <h4>Contact Lab</h4>
           <p class="contact-info"><span class="material-icons">location_on</span> Lagos, Nigeria</p>
-          <p class="contact-info"><span class="material-icons">mail</span> research@optimamind.ai</p>
+          <p class="contact-info"><span class="material-icons">mail</span> research@optimamind.com.ng</p>
           <p class="contact-info"><span class="material-icons">verified_user</span> Security Audited</p>
         </div>
 

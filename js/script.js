@@ -52,24 +52,78 @@ document.addEventListener('DOMContentLoaded', () => {
     calculateSimulation(); // Initial run
   }
 
-  // Demo Booking Simulation
+  // Demo Booking — Formsend API Integration
+  const FORMSEND_API_KEY = '03077ddb449b434911bb2fb7c4ebb4290e61d469691e9b5a72a04c300282b99f';
+  const FORMSEND_ENDPOINT = 'https://api.formsend.ezeroandone.io/submit';
+
   const demoForm = document.getElementById('demoForm');
   const demoSuccess = document.getElementById('demoSuccess');
+  const demoError = document.getElementById('demoError');
+  const demoSubmitBtn = document.getElementById('demoSubmitBtn');
 
   if (demoForm && demoSuccess) {
-    demoForm.addEventListener('submit', (e) => {
+    demoForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const company = document.getElementById('companyName').value;
-      const email = document.getElementById('contactEmail').value;
+      const name = document.getElementById('contactName').value.trim();
+      const company = document.getElementById('companyName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const database = document.getElementById('primaryDatabase').value;
+      const goals = document.getElementById('optimizationGoals').value.trim();
 
-      if (company && email) {
-        demoForm.classList.add('hidden');
-        demoSuccess.classList.remove('hidden');
-        demoSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Basic validation
+      if (!name || !company || !email || !goals) {
+        if (demoError) {
+          demoError.textContent = 'Please fill in all required fields.';
+          demoError.classList.remove('hidden');
+        }
+        return;
+      }
+
+      // Loading state
+      if (demoSubmitBtn) {
+        demoSubmitBtn.disabled = true;
+        demoSubmitBtn.textContent = 'Sending…';
+      }
+      if (demoError) demoError.classList.add('hidden');
+
+      try {
+        const res = await fetch(FORMSEND_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            api_key: FORMSEND_API_KEY,
+            name: name,
+            email: email,
+            subject: `Demo Request from ${name} — ${company}`,
+            message: goals,
+            company: company,
+            database_system: database,
+          }),
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          demoForm.classList.add('hidden');
+          demoSuccess.classList.remove('hidden');
+          demoSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          throw new Error(data.message || 'Submission failed. Please try again.');
+        }
+      } catch (err) {
+        if (demoError) {
+          demoError.textContent = err.message || 'An error occurred. Please try again.';
+          demoError.classList.remove('hidden');
+        }
+        if (demoSubmitBtn) {
+          demoSubmitBtn.disabled = false;
+          demoSubmitBtn.textContent = 'Submit Demo Request';
+        }
       }
     });
   }
+
 
   // Layered Parallax Scroll & Mousemove for Dashboard Floating Cards
   const hero = document.querySelector('.hero-section');

@@ -1107,3 +1107,48 @@ select.form-control {
     text-align: center;
   }
 }
+
+/* ==========================================
+   Utility & Form Feedback Styles
+   ========================================== */
+
+.hidden {
+  display: none !important;
+}
+
+.success-alert {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(167, 139, 250, 0.08));
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: var(--border-radius-md);
+  padding: 24px 28px;
+  color: var(--color-dark);
+  font-weight: 500;
+  margin-top: 24px;
+  animation: fadeIn 0.4s ease;
+}
+
+.success-alert .material-icons {
+  font-size: 2rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.error-alert {
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  border-radius: var(--border-radius-md);
+  padding: 14px 18px;
+  color: #be123c;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
